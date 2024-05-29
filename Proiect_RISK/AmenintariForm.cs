@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,14 @@ namespace Proiect_RISK
 {
     public partial class AmenintariForm : Form
     {
+        // Stringul de conexiune la baza de date (modifică-l conform necesităților tale)
+        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Andrei\Documents\tabele.mdf;Integrated Security=True;Connect Timeout=30";
+
         public AmenintariForm()
         {
             InitializeComponent();
+
+            LoadBunuriData();
         }
 
         private void AmenintariForm_Load(object sender, EventArgs e)
@@ -31,6 +37,50 @@ namespace Proiect_RISK
         {
 
         }
+
+        private void LoadBunuriData()
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    // Deschide conexiunea
+                    conn.Open();
+
+                    // Creează un SqlDataAdapter pentru a executa interogarea
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT Amenintare, Nivel_minim, Nivel_maxim FROM AMENINTARI", conn);
+
+                    // Creează un DataTable pentru a stoca rezultatele
+                    DataTable dataTable = new DataTable();
+
+                    // Populează DataTable-ul cu datele din baza de date
+                    dataAdapter.Fill(dataTable);
+
+                    // Verifică dacă dataTable conține date
+                    if (dataTable.Rows.Count > 0)
+                    {
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nu s-au găsit înregistrări în tabela BUNURI.");
+                    }
+
+                    // Maparea coloanelor din DataTable la coloanele din DataGridView
+                    dataGridView1.Columns["Column1"].DataPropertyName = "Amenintare";
+                    dataGridView1.Columns["Column3"].DataPropertyName = "Nivel_minim";
+                    dataGridView1.Columns["Column4"].DataPropertyName = "Nivel_maxim";
+
+                    // Setează DataSource-ul DataGridView-ului la DataTable
+                    dataGridView1.DataSource = dataTable;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("A apărut o eroare: " + ex.Message);
+                }
+            }
+        }
+
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
@@ -129,6 +179,25 @@ namespace Proiect_RISK
         {
             VulnerabilitatiForm vulnForm = new VulnerabilitatiForm();
             vulnForm.Show();
+            this.Hide();
+        }
+
+        private void amenintari_amenintariBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void amenintari_riscuriBtn_Click(object sender, EventArgs e)
+        {
+            RiscuriForm riscForm = new RiscuriForm();
+            riscForm.Show();
+            this.Hide();
+        }
+
+        private void amenintari_tratareBtn_Click(object sender, EventArgs e)
+        {
+            TratareForm tratForm = new TratareForm();
+            tratForm.Show();
             this.Hide();
         }
     }

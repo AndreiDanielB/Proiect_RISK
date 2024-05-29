@@ -253,6 +253,7 @@
             this.amenintari_tratareBtn.TabIndex = 9;
             this.amenintari_tratareBtn.Text = "Tratare riscuri si identificare contramasuri";
             this.amenintari_tratareBtn.UseVisualStyleBackColor = true;
+            this.amenintari_tratareBtn.Click += new System.EventHandler(this.amenintari_tratareBtn_Click);
             // 
             // amenintari_riscuriBtn
             // 
@@ -283,6 +284,7 @@
             this.amenintari_vulnerabilitatiBtn.TabIndex = 7;
             this.amenintari_vulnerabilitatiBtn.Text = "Identificare vulnerabilitati";
             this.amenintari_vulnerabilitatiBtn.UseVisualStyleBackColor = true;
+            this.amenintari_vulnerabilitatiBtn.Click += new System.EventHandler(this.amenintari_vulnerabilitatiBtn_Click);
             // 
             // amenintari_amenintariBtn
             // 
@@ -298,6 +300,7 @@
             this.amenintari_amenintariBtn.TabIndex = 6;
             this.amenintari_amenintariBtn.Text = "Identificare amenintari";
             this.amenintari_amenintariBtn.UseVisualStyleBackColor = true;
+            this.amenintari_amenintariBtn.Click += new System.EventHandler(this.amenintari_amenintariBtn_Click);
             // 
             // amenintari_bunuriBtn
             // 
@@ -511,6 +514,9 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(231)))), ((int)(((byte)(225)))));
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(1139, 310);
@@ -518,10 +524,13 @@
             this.button1.Size = new System.Drawing.Size(106, 33);
             this.button1.TabIndex = 52;
             this.button1.Text = "Salveaza";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(231)))), ((int)(((byte)(225)))));
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(1267, 310);
@@ -529,7 +538,7 @@
             this.button2.Size = new System.Drawing.Size(99, 33);
             this.button2.TabIndex = 53;
             this.button2.Text = "Anuleaza";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 

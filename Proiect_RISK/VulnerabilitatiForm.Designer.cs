@@ -51,6 +51,9 @@ namespace Proiect_RISK
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -59,14 +62,11 @@ namespace Proiect_RISK
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -106,6 +106,7 @@ namespace Proiect_RISK
             this.vulnerabilitati_tratareBtn.TabIndex = 9;
             this.vulnerabilitati_tratareBtn.Text = "Tratare riscuri si identificare contramasuri";
             this.vulnerabilitati_tratareBtn.UseVisualStyleBackColor = true;
+            this.vulnerabilitati_tratareBtn.Click += new System.EventHandler(this.vulnerabilitati_tratareBtn_Click);
             // 
             // vulnerabilitati_riscuriBtn
             // 
@@ -121,6 +122,7 @@ namespace Proiect_RISK
             this.vulnerabilitati_riscuriBtn.TabIndex = 8;
             this.vulnerabilitati_riscuriBtn.Text = "Identificare riscuri";
             this.vulnerabilitati_riscuriBtn.UseVisualStyleBackColor = true;
+            this.vulnerabilitati_riscuriBtn.Click += new System.EventHandler(this.vulnerabilitati_riscuriBtn_Click);
             // 
             // vulnerabilitati_vulnerabilitatiBtn
             // 
@@ -136,6 +138,7 @@ namespace Proiect_RISK
             this.vulnerabilitati_vulnerabilitatiBtn.TabIndex = 7;
             this.vulnerabilitati_vulnerabilitatiBtn.Text = "Identificare vulnerabilitati";
             this.vulnerabilitati_vulnerabilitatiBtn.UseVisualStyleBackColor = true;
+            this.vulnerabilitati_vulnerabilitatiBtn.Click += new System.EventHandler(this.vulnerabilitati_vulnerabilitatiBtn_Click);
             // 
             // vulnerabilitati_amenintariBtn
             // 
@@ -372,6 +375,27 @@ namespace Proiect_RISK
             this.dataGridView1.Size = new System.Drawing.Size(1212, 309);
             this.dataGridView1.TabIndex = 58;
             // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.HeaderText = "Bun";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.HeaderText = "Vulnerabilitate";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.HeaderText = "Nivel";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -459,6 +483,26 @@ namespace Proiect_RISK
             this.panel4.Size = new System.Drawing.Size(410, 190);
             this.panel4.TabIndex = 48;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(3, 28);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(172, 18);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "Imaginea organizatiei";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 4);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 18);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Furnizori";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -488,47 +532,6 @@ namespace Proiect_RISK
             this.label13.Size = new System.Drawing.Size(240, 23);
             this.label13.TabIndex = 45;
             this.label13.Text = "Nomenclator vulnerabilitati:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 4);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 18);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Furnizori";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(3, 28);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(172, 18);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "Imaginea organizatiei";
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.HeaderText = "Bun";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.HeaderText = "Vulnerabilitate";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.HeaderText = "Nivel";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
             // 
             // VulnerabilitatiForm
             // 

@@ -51,21 +51,21 @@ namespace Proiect_RISK
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.main_nomenclator = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.main_domeniu = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.main_nume = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.main_min = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.main_max = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.main_cost = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.main_salveaza = new System.Windows.Forms.Button();
-            this.main_anuleaza = new System.Windows.Forms.Button();
+            this.main_reducere = new System.Windows.Forms.TextBox();
+            this.main_salveazaBtn = new System.Windows.Forms.Button();
+            this.main_anuleazaBtn = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Nume = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -282,6 +282,7 @@ namespace Proiect_RISK
             this.main_vulnerabilitati.TabIndex = 7;
             this.main_vulnerabilitati.Text = "Identificare vulnerabilitati";
             this.main_vulnerabilitati.UseVisualStyleBackColor = true;
+            this.main_vulnerabilitati.Click += new System.EventHandler(this.main_vulnerabilitati_Click);
             // 
             // main_amenintari
             // 
@@ -313,6 +314,7 @@ namespace Proiect_RISK
             this.main_bunuri.TabIndex = 5;
             this.main_bunuri.Text = "Identificare bunuri";
             this.main_bunuri.UseVisualStyleBackColor = true;
+            this.main_bunuri.Click += new System.EventHandler(this.main_bunuri_Click);
             // 
             // label9
             // 
@@ -377,14 +379,14 @@ namespace Proiect_RISK
             this.label13.TabIndex = 6;
             this.label13.Text = "Nomenclator bunuri:";
             // 
-            // comboBox1
+            // main_nomenclator
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(443, 154);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(413, 24);
-            this.comboBox1.TabIndex = 7;
+            this.main_nomenclator.FormattingEnabled = true;
+            this.main_nomenclator.Location = new System.Drawing.Point(443, 154);
+            this.main_nomenclator.Margin = new System.Windows.Forms.Padding(4);
+            this.main_nomenclator.Name = "main_nomenclator";
+            this.main_nomenclator.Size = new System.Drawing.Size(413, 24);
+            this.main_nomenclator.TabIndex = 7;
             // 
             // label14
             // 
@@ -397,14 +399,14 @@ namespace Proiect_RISK
             this.label14.TabIndex = 8;
             this.label14.Text = "Domeniu:";
             // 
-            // comboBox2
+            // main_domeniu
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(1047, 154);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(403, 24);
-            this.comboBox2.TabIndex = 9;
+            this.main_domeniu.FormattingEnabled = true;
+            this.main_domeniu.Location = new System.Drawing.Point(1047, 154);
+            this.main_domeniu.Margin = new System.Windows.Forms.Padding(4);
+            this.main_domeniu.Name = "main_domeniu";
+            this.main_domeniu.Size = new System.Drawing.Size(403, 24);
+            this.main_domeniu.TabIndex = 9;
             // 
             // label15
             // 
@@ -417,13 +419,13 @@ namespace Proiect_RISK
             this.label15.TabIndex = 10;
             this.label15.Text = "Nume:";
             // 
-            // textBox1
+            // main_nume
             // 
-            this.textBox1.Location = new System.Drawing.Point(443, 201);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(413, 22);
-            this.textBox1.TabIndex = 11;
+            this.main_nume.Location = new System.Drawing.Point(443, 201);
+            this.main_nume.Margin = new System.Windows.Forms.Padding(4);
+            this.main_nume.Name = "main_nume";
+            this.main_nume.Size = new System.Drawing.Size(413, 22);
+            this.main_nume.TabIndex = 11;
             // 
             // label16
             // 
@@ -436,14 +438,14 @@ namespace Proiect_RISK
             this.label16.TabIndex = 12;
             this.label16.Text = "Impact minim:";
             // 
-            // comboBox3
+            // main_min
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(443, 241);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(124, 24);
-            this.comboBox3.TabIndex = 13;
+            this.main_min.FormattingEnabled = true;
+            this.main_min.Location = new System.Drawing.Point(443, 241);
+            this.main_min.Margin = new System.Windows.Forms.Padding(4);
+            this.main_min.Name = "main_min";
+            this.main_min.Size = new System.Drawing.Size(124, 24);
+            this.main_min.TabIndex = 13;
             // 
             // label17
             // 
@@ -457,14 +459,14 @@ namespace Proiect_RISK
             this.label17.Text = "Impact maxim:";
             this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
-            // comboBox4
+            // main_max
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(748, 242);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(108, 24);
-            this.comboBox4.TabIndex = 15;
+            this.main_max.FormattingEnabled = true;
+            this.main_max.Location = new System.Drawing.Point(748, 242);
+            this.main_max.Margin = new System.Windows.Forms.Padding(4);
+            this.main_max.Name = "main_max";
+            this.main_max.Size = new System.Drawing.Size(108, 24);
+            this.main_max.TabIndex = 15;
             // 
             // label18
             // 
@@ -477,13 +479,13 @@ namespace Proiect_RISK
             this.label18.TabIndex = 16;
             this.label18.Text = "Cost:";
             // 
-            // textBox2
+            // main_cost
             // 
-            this.textBox2.Location = new System.Drawing.Point(1047, 201);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(123, 22);
-            this.textBox2.TabIndex = 17;
+            this.main_cost.Location = new System.Drawing.Point(1047, 201);
+            this.main_cost.Margin = new System.Windows.Forms.Padding(4);
+            this.main_cost.Name = "main_cost";
+            this.main_cost.Size = new System.Drawing.Size(123, 22);
+            this.main_cost.TabIndex = 17;
             // 
             // label19
             // 
@@ -496,47 +498,48 @@ namespace Proiect_RISK
             this.label19.TabIndex = 18;
             this.label19.Text = "Cost de reducere:";
             // 
-            // textBox3
+            // main_reducere
             // 
-            this.textBox3.Location = new System.Drawing.Point(1353, 201);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(96, 22);
-            this.textBox3.TabIndex = 19;
+            this.main_reducere.Location = new System.Drawing.Point(1353, 201);
+            this.main_reducere.Margin = new System.Windows.Forms.Padding(4);
+            this.main_reducere.Name = "main_reducere";
+            this.main_reducere.Size = new System.Drawing.Size(96, 22);
+            this.main_reducere.TabIndex = 19;
             // 
-            // main_salveaza
+            // main_salveazaBtn
             // 
-            this.main_salveaza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(231)))), ((int)(((byte)(225)))));
-            this.main_salveaza.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.main_salveaza.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
-            this.main_salveaza.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
-            this.main_salveaza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.main_salveaza.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.main_salveaza.Location = new System.Drawing.Point(1160, 241);
-            this.main_salveaza.Margin = new System.Windows.Forms.Padding(4);
-            this.main_salveaza.Name = "main_salveaza";
-            this.main_salveaza.Size = new System.Drawing.Size(141, 32);
-            this.main_salveaza.TabIndex = 20;
-            this.main_salveaza.Text = "Salveaza";
-            this.main_salveaza.UseVisualStyleBackColor = false;
-            this.main_salveaza.Click += new System.EventHandler(this.button1_Click);
+            this.main_salveazaBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(231)))), ((int)(((byte)(225)))));
+            this.main_salveazaBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.main_salveazaBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
+            this.main_salveazaBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
+            this.main_salveazaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.main_salveazaBtn.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.main_salveazaBtn.Location = new System.Drawing.Point(1160, 241);
+            this.main_salveazaBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.main_salveazaBtn.Name = "main_salveazaBtn";
+            this.main_salveazaBtn.Size = new System.Drawing.Size(141, 32);
+            this.main_salveazaBtn.TabIndex = 20;
+            this.main_salveazaBtn.Text = "Salveaza";
+            this.main_salveazaBtn.UseVisualStyleBackColor = false;
+            this.main_salveazaBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // main_anuleaza
+            // main_anuleazaBtn
             // 
-            this.main_anuleaza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(231)))), ((int)(((byte)(225)))));
-            this.main_anuleaza.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.main_anuleaza.Enabled = false;
-            this.main_anuleaza.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
-            this.main_anuleaza.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
-            this.main_anuleaza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.main_anuleaza.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.main_anuleaza.Location = new System.Drawing.Point(1309, 241);
-            this.main_anuleaza.Margin = new System.Windows.Forms.Padding(4);
-            this.main_anuleaza.Name = "main_anuleaza";
-            this.main_anuleaza.Size = new System.Drawing.Size(141, 32);
-            this.main_anuleaza.TabIndex = 21;
-            this.main_anuleaza.Text = "Anuleaza";
-            this.main_anuleaza.UseVisualStyleBackColor = false;
+            this.main_anuleazaBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(231)))), ((int)(((byte)(225)))));
+            this.main_anuleazaBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.main_anuleazaBtn.Enabled = false;
+            this.main_anuleazaBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
+            this.main_anuleazaBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
+            this.main_anuleazaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.main_anuleazaBtn.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.main_anuleazaBtn.Location = new System.Drawing.Point(1309, 241);
+            this.main_anuleazaBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.main_anuleazaBtn.Name = "main_anuleazaBtn";
+            this.main_anuleazaBtn.Size = new System.Drawing.Size(141, 32);
+            this.main_anuleazaBtn.TabIndex = 21;
+            this.main_anuleazaBtn.Text = "Anuleaza";
+            this.main_anuleazaBtn.UseVisualStyleBackColor = false;
+            this.main_anuleazaBtn.Click += new System.EventHandler(this.main_anuleazaBtn_Click);
             // 
             // label20
             // 
@@ -559,7 +562,7 @@ namespace Proiect_RISK
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(237, 327);
+            this.dataGridView1.Location = new System.Drawing.Point(235, 335);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -569,45 +572,45 @@ namespace Proiect_RISK
             // 
             // Nume
             // 
+            this.Nume.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Nume.HeaderText = "Nume";
             this.Nume.MinimumWidth = 6;
             this.Nume.Name = "Nume";
-            this.Nume.Width = 125;
             // 
             // Column1
             // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column1.HeaderText = "Impact minim";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
             // 
             // Column2
             // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column2.HeaderText = "Impact maxim";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
             // 
             // Column3
             // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column3.HeaderText = "Domeniu";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
             // 
             // Column4
             // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column4.HeaderText = "Cost";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
             // 
             // Column5
             // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column5.HeaderText = "Cost de reducere";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
             // 
             // MainForm
             // 
@@ -616,21 +619,21 @@ namespace Proiect_RISK
             this.ClientSize = new System.Drawing.Size(1467, 738);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.main_anuleaza);
-            this.Controls.Add(this.main_salveaza);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.main_anuleazaBtn);
+            this.Controls.Add(this.main_salveazaBtn);
+            this.Controls.Add(this.main_reducere);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.main_cost);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.main_max);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.main_min);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.main_nume);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.main_domeniu);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.main_nomenclator);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -669,29 +672,23 @@ namespace Proiect_RISK
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox main_nomenclator;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox main_domeniu;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox main_nume;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox main_min;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox main_max;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox main_cost;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button main_salveaza;
-        private System.Windows.Forms.Button main_anuleaza;
+        private System.Windows.Forms.TextBox main_reducere;
+        private System.Windows.Forms.Button main_salveazaBtn;
+        private System.Windows.Forms.Button main_anuleazaBtn;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nume;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Button main_tratare;
         private System.Windows.Forms.Button main_riscuri;
         private System.Windows.Forms.Button main_vulnerabilitati;
@@ -702,5 +699,11 @@ namespace Proiect_RISK
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nume;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }

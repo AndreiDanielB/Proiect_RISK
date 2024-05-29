@@ -90,6 +90,9 @@
     <Compile Include="VulnerabilitatiForm.Designer.cs">
       <DependentUpon>VulnerabilitatiForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AmenintariForm.resx">
+      <DependentUpon>AmenintariForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TratareForm.resx">
       <DependentUpon>TratareForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VulnerabilitatiForm.resx">
+      <DependentUpon>VulnerabilitatiForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

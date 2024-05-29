@@ -46,5 +46,24 @@ namespace Proiect_RISK
             amenForm.Show();
             this.Hide();
         }
+
+        private void vulnerabilitati_vulnerabilitatiBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vulnerabilitati_riscuriBtn_Click(object sender, EventArgs e)
+        {
+            RiscuriForm riscForm = new RiscuriForm();
+            riscForm.Show();
+            this.Hide();
+        }
+
+        private void vulnerabilitati_tratareBtn_Click(object sender, EventArgs e)
+        {
+            TratareForm tratForm = new TratareForm();
+            tratForm.Show();
+            this.Hide();
+        }
     }
 }

@@ -23,5 +23,36 @@ namespace Proiect_RISK
             mainForm.Show();
             this.Hide();
         }
+
+        private void amenintari_amenintariBtn_Click(object sender, EventArgs e)
+        {
+            AmenintariForm amenForm = new AmenintariForm();
+            amenForm.Show();
+            this.Hide();
+        }
+
+        private void amenintari_vulnerabilitatiBtn_Click(object sender, EventArgs e)
+        {
+            VulnerabilitatiForm vulnForm = new VulnerabilitatiForm();
+            vulnForm.Show();
+            this.Hide();
+        }
+
+        private void amenintari_riscuriBtn_Click(object sender, EventArgs e)
+        {
+            RiscuriForm riscForm = new RiscuriForm();
+            riscForm.Show();
+            this.Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

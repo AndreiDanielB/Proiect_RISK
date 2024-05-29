@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -50,7 +49,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -70,7 +68,6 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,7 +84,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(231)))), ((int)(((byte)(225)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button12);
             this.panel1.Controls.Add(this.button11);
             this.panel1.Controls.Add(this.button10);
@@ -102,15 +98,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1467, 39);
             this.panel1.TabIndex = 25;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // button12
             // 
@@ -193,6 +180,7 @@
             this.label6.Size = new System.Drawing.Size(17, 23);
             this.label6.TabIndex = 19;
             this.label6.Text = "-";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // exit
             // 
@@ -205,6 +193,7 @@
             this.exit.Size = new System.Drawing.Size(21, 23);
             this.exit.TabIndex = 18;
             this.exit.Text = "X";
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // panel2
             // 
@@ -276,6 +265,7 @@
             this.amenintari_riscuriBtn.TabIndex = 8;
             this.amenintari_riscuriBtn.Text = "Identificare riscuri";
             this.amenintari_riscuriBtn.UseVisualStyleBackColor = true;
+            this.amenintari_riscuriBtn.Click += new System.EventHandler(this.amenintari_riscuriBtn_Click);
             // 
             // amenintari_vulnerabilitatiBtn
             // 
@@ -291,6 +281,7 @@
             this.amenintari_vulnerabilitatiBtn.TabIndex = 7;
             this.amenintari_vulnerabilitatiBtn.Text = "Identificare vulnerabilitati";
             this.amenintari_vulnerabilitatiBtn.UseVisualStyleBackColor = true;
+            this.amenintari_vulnerabilitatiBtn.Click += new System.EventHandler(this.amenintari_vulnerabilitatiBtn_Click);
             // 
             // amenintari_amenintariBtn
             // 
@@ -306,6 +297,7 @@
             this.amenintari_amenintariBtn.TabIndex = 6;
             this.amenintari_amenintariBtn.Text = "Identificare amenintari";
             this.amenintari_amenintariBtn.UseVisualStyleBackColor = true;
+            this.amenintari_amenintariBtn.Click += new System.EventHandler(this.amenintari_amenintariBtn_Click);
             // 
             // amenintari_bunuriBtn
             // 
@@ -373,15 +365,6 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(1219, 12);
             this.label12.TabIndex = 34;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "label1";
             // 
             // label2
             // 
@@ -529,32 +512,29 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(231)))), ((int)(((byte)(225)))));
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(1285, 329);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 29);
             this.button2.TabIndex = 53;
             this.button2.Text = "Adauga";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(231)))), ((int)(((byte)(225)))));
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(1235, 376);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(153, 29);
             this.button3.TabIndex = 54;
             this.button3.Text = "Sterge formular";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(0, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(54, 17);
-            this.label17.TabIndex = 55;
-            this.label17.Text = "label17";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // label18
             // 
@@ -616,7 +596,6 @@
             this.ClientSize = new System.Drawing.Size(1467, 738);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.label17);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox8);
@@ -636,7 +615,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -682,7 +660,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -699,11 +676,9 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

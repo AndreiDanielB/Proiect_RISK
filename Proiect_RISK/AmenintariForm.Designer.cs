@@ -54,6 +54,8 @@ namespace Proiect_RISK
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.amenintari_salveazaBtn = new System.Windows.Forms.Button();
             this.amenintari_anuleazaBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,8 +66,6 @@ namespace Proiect_RISK
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -115,7 +115,7 @@ namespace Proiect_RISK
             this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Location = new System.Drawing.Point(447, 5);
-            this.button12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button12.Margin = new System.Windows.Forms.Padding(4);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(100, 28);
             this.button12.TabIndex = 24;
@@ -129,7 +129,7 @@ namespace Proiect_RISK
             this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Location = new System.Drawing.Point(339, 5);
-            this.button11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button11.Margin = new System.Windows.Forms.Padding(4);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(100, 28);
             this.button11.TabIndex = 23;
@@ -143,7 +143,7 @@ namespace Proiect_RISK
             this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Location = new System.Drawing.Point(231, 5);
-            this.button10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(100, 28);
             this.button10.TabIndex = 22;
@@ -157,7 +157,7 @@ namespace Proiect_RISK
             this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Location = new System.Drawing.Point(123, 5);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(100, 28);
             this.button9.TabIndex = 21;
@@ -178,7 +178,7 @@ namespace Proiect_RISK
             this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1467, 39);
             this.panel1.TabIndex = 24;
@@ -190,7 +190,7 @@ namespace Proiect_RISK
             this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Location = new System.Drawing.Point(15, 5);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(100, 28);
             this.button8.TabIndex = 20;
@@ -241,7 +241,7 @@ namespace Proiect_RISK
             this.panel2.Controls.Add(this.label7);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 693);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1467, 45);
             this.panel2.TabIndex = 25;
@@ -259,7 +259,7 @@ namespace Proiect_RISK
             this.panel3.Controls.Add(this.label8);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 39);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(229, 654);
             this.panel3.TabIndex = 30;
@@ -272,12 +272,13 @@ namespace Proiect_RISK
             this.amenintari_tratareBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
             this.amenintari_tratareBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.amenintari_tratareBtn.Location = new System.Drawing.Point(15, 236);
-            this.amenintari_tratareBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.amenintari_tratareBtn.Margin = new System.Windows.Forms.Padding(4);
             this.amenintari_tratareBtn.Name = "amenintari_tratareBtn";
             this.amenintari_tratareBtn.Size = new System.Drawing.Size(188, 47);
             this.amenintari_tratareBtn.TabIndex = 9;
             this.amenintari_tratareBtn.Text = "Tratare riscuri si identificare contramasuri";
             this.amenintari_tratareBtn.UseVisualStyleBackColor = true;
+            this.amenintari_tratareBtn.Click += new System.EventHandler(this.amenintari_tratareBtn_Click);
             // 
             // amenintari_riscuriBtn
             // 
@@ -287,12 +288,13 @@ namespace Proiect_RISK
             this.amenintari_riscuriBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
             this.amenintari_riscuriBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.amenintari_riscuriBtn.Location = new System.Drawing.Point(15, 201);
-            this.amenintari_riscuriBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.amenintari_riscuriBtn.Margin = new System.Windows.Forms.Padding(4);
             this.amenintari_riscuriBtn.Name = "amenintari_riscuriBtn";
             this.amenintari_riscuriBtn.Size = new System.Drawing.Size(188, 28);
             this.amenintari_riscuriBtn.TabIndex = 8;
             this.amenintari_riscuriBtn.Text = "Identificare riscuri";
             this.amenintari_riscuriBtn.UseVisualStyleBackColor = true;
+            this.amenintari_riscuriBtn.Click += new System.EventHandler(this.amenintari_riscuriBtn_Click);
             // 
             // amenintari_vulnerabilitatiBtn
             // 
@@ -302,7 +304,7 @@ namespace Proiect_RISK
             this.amenintari_vulnerabilitatiBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
             this.amenintari_vulnerabilitatiBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.amenintari_vulnerabilitatiBtn.Location = new System.Drawing.Point(15, 165);
-            this.amenintari_vulnerabilitatiBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.amenintari_vulnerabilitatiBtn.Margin = new System.Windows.Forms.Padding(4);
             this.amenintari_vulnerabilitatiBtn.Name = "amenintari_vulnerabilitatiBtn";
             this.amenintari_vulnerabilitatiBtn.Size = new System.Drawing.Size(188, 28);
             this.amenintari_vulnerabilitatiBtn.TabIndex = 7;
@@ -318,12 +320,13 @@ namespace Proiect_RISK
             this.amenintari_amenintariBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
             this.amenintari_amenintariBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.amenintari_amenintariBtn.Location = new System.Drawing.Point(15, 129);
-            this.amenintari_amenintariBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.amenintari_amenintariBtn.Margin = new System.Windows.Forms.Padding(4);
             this.amenintari_amenintariBtn.Name = "amenintari_amenintariBtn";
             this.amenintari_amenintariBtn.Size = new System.Drawing.Size(188, 28);
             this.amenintari_amenintariBtn.TabIndex = 6;
             this.amenintari_amenintariBtn.Text = "Identificare amenintari";
             this.amenintari_amenintariBtn.UseVisualStyleBackColor = true;
+            this.amenintari_amenintariBtn.Click += new System.EventHandler(this.amenintari_amenintariBtn_Click);
             // 
             // amenintari_bunuriBtn
             // 
@@ -333,7 +336,7 @@ namespace Proiect_RISK
             this.amenintari_bunuriBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(221)))));
             this.amenintari_bunuriBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.amenintari_bunuriBtn.Location = new System.Drawing.Point(15, 94);
-            this.amenintari_bunuriBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.amenintari_bunuriBtn.Margin = new System.Windows.Forms.Padding(4);
             this.amenintari_bunuriBtn.Name = "amenintari_bunuriBtn";
             this.amenintari_bunuriBtn.Size = new System.Drawing.Size(188, 28);
             this.amenintari_bunuriBtn.TabIndex = 5;
@@ -400,6 +403,28 @@ namespace Proiect_RISK
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(410, 190);
             this.panel4.TabIndex = 34;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.Location = new System.Drawing.Point(3, 31);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(194, 22);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "Imaginea organizatiei";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(3, 3);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(98, 22);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "Furnizori";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // amenintari_salveazaBtn
             // 
@@ -511,28 +536,6 @@ namespace Proiect_RISK
             this.dataGridView1.Size = new System.Drawing.Size(1212, 309);
             this.dataGridView1.TabIndex = 44;
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(3, 3);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(98, 22);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Furnizori";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(3, 31);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(194, 22);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Imaginea organizatiei";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -587,7 +590,7 @@ namespace Proiect_RISK
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AmenintariForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AmenintariForm";
