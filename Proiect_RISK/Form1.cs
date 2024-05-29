@@ -15,7 +15,7 @@ namespace Proiect_RISK
     
     public partial class Form1 : Form
     {
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Andrei\Documents\users.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Emilia\Documents\users.mdf;Integrated Security=True;Connect Timeout=30");
         public Form1()
         {
             InitializeComponent();

@@ -53,5 +53,12 @@ namespace Proiect_RISK
             amenForm.Show();
             this.Hide();
         }
+
+        private void main_riscuri_Click(object sender, EventArgs e)
+        {
+            RiscuriForm riscForm = new RiscuriForm();
+            riscForm.Show();
+            this.Hide();
+        }
     }
 }
