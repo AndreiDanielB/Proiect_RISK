@@ -60,5 +60,12 @@ namespace Proiect_RISK
             riscForm.Show();
             this.Hide();
         }
+
+        private void main_tratare_Click(object sender, EventArgs e)
+        {
+            TratareForm tratForm = new TratareForm();
+            tratForm.Show();
+            this.Hide();
+        }
     }
 }

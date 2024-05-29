@@ -313,6 +313,7 @@
             this.amenintari_bunuriBtn.TabIndex = 5;
             this.amenintari_bunuriBtn.Text = "Identificare bunuri";
             this.amenintari_bunuriBtn.UseVisualStyleBackColor = true;
+            this.amenintari_bunuriBtn.Click += new System.EventHandler(this.amenintari_bunuriBtn_Click);
             // 
             // label9
             // 

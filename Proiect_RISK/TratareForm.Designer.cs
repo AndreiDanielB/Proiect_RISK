@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -67,7 +68,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
@@ -102,6 +102,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1467, 39);
             this.panel1.TabIndex = 25;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // button12
             // 
@@ -312,6 +321,7 @@
             this.amenintari_bunuriBtn.TabIndex = 5;
             this.amenintari_bunuriBtn.Text = "Identificare bunuri";
             this.amenintari_bunuriBtn.UseVisualStyleBackColor = true;
+            this.amenintari_bunuriBtn.Click += new System.EventHandler(this.amenintari_bunuriBtn_Click);
             // 
             // label9
             // 
@@ -369,7 +379,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 35;
             this.label1.Text = "label1";
             // 
@@ -517,15 +527,6 @@
             this.textBox8.Size = new System.Drawing.Size(458, 22);
             this.textBox8.TabIndex = 52;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -551,7 +552,7 @@
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(0, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(51, 16);
+            this.label17.Size = new System.Drawing.Size(54, 17);
             this.label17.TabIndex = 55;
             this.label17.Text = "label17";
             // 

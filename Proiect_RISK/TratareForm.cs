@@ -16,5 +16,12 @@ namespace Proiect_RISK
         {
             InitializeComponent();
         }
+
+        private void amenintari_bunuriBtn_Click(object sender, EventArgs e)
+        {
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+            this.Hide();
+        }
     }
 }
