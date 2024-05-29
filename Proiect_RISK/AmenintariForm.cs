@@ -124,5 +124,12 @@ namespace Proiect_RISK
             mainForm.Show();
             this.Hide();
         }
+
+        private void amenintari_vulnerabilitatiBtn_Click(object sender, EventArgs e)
+        {
+            VulnerabilitatiForm vulnForm = new VulnerabilitatiForm();
+            vulnForm.Show();
+            this.Hide();
+        }
     }
 }
